@@ -1,0 +1,33 @@
+
+.icon{
+    position : relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    color: #ffffff;
+    padding: 1rem;
+    z-index: 10;
+}
+
+.icon::after{
+    content: '';
+    border: 2px dashed #eeeeee ;
+    border-radius: 50%;
+    z-index: -10;
+    position: absolute;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: -10px;
+    left: -10px;
+}
+
+.services-animation:hover{
+
+    transform: translateY(-10px);
+    box-shadow: 0 18px 56px rgb(47 91 234 /14%) ;
+    color: white;
+    transition-duration: 500ms;
+    background: linear-gradient(to right, #0c1854 0, #4f0c80 51%, #0e184e 100%);
+}
+

@@ -1,0 +1,11 @@
+
+.imageWidth{
+     max-width:700px;
+
+}
+
+.imageAlignment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,34 @@
+<template>
+    <section class="aboutus-section">
+        <div class="container-fluid pt-5 pb-5">
+          <div class="row">
+              <div class="col-12 col-md-6 text-center mt-md-5">
+                 
+                <div class="pt-5 mb-5">
+                    <h2 class="blue-heading-color section-heading">{aboutusData.sectionHeading}</h2>
+                    <div class="purple-gradient line"></div>
+                </div>
+             <p class="fs-4 mb-5">{aboutusData.description}</p>
+             <div class="row mb-5">
+                 <template for:each={aboutusData.stats} for:item="stat">
+                     <div class="col-sm-4 mb-3" key={stat.label}>
+                         <div class="small-box text-center">
+                             <h2 class="mb-3 mb-md-0 fs-2">{stat.value}</h2>
+                             <span class="fs-4">{stat.label}</span>
+                         </div>
+
+                     </div>
+                 </template>
+                </div>
+
+                <p class="mb-5 mt-5 fs-4">{aboutusData.tagline}</p>
+             
+              </div>
+              <div class="col-12 col-md-6">
+                  <img loading="lazy" src="./resources/Images/court.jpg"
+                  class="img-fluid" alt="about us image" width="90%" height="90%"/>
+              </div>
+          </div>    
+        </div>
+    </section>
+</template>

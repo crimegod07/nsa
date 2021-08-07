@@ -1,0 +1,40 @@
+<template>
+    <section class="ourwork-section dark-yellow">
+        <div class="container-fluid px-md-5 pt-5 pb-5">
+            <div class="text-center pt-5">
+                <h2 class="section-heading blue-heading-color">{ourworkData.sectionHeading}</h2>
+                <div class="line purple-gradient mb-5"></div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="./resources/Images/dpk4.jpg" alt="Our work Lifecycle"
+                    class="img-fluid" width ="100%" height="auto"
+                    />
+                </div>
+                <div class="col-12 col-md-6 text-center ms-auto">
+
+                    <div class="pt-5">
+                        <template for:each={ourworkData.points} for:item="point">
+                            <div class="d-flex align-items-center" key={point.icon}>
+                                <img src={point.icon} class="img-fluid me-2 imgIcons" alt="icon of the point"/>
+                                <p class="fs-4">{point.label}</p>
+                            </div>
+                        </template>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <template for:each={ourworkData.images} for:item="image">
+                    <div class="col h-100" key={image}>
+                        <div class="img-wrapper purple-gradient">
+                            <img loading="lazy" src={image} alt="image of our work"  height="225px" width= "100%"/> 
+
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+
+    </section>
+</template>

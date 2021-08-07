@@ -1,0 +1,11 @@
+
+.imgIcons{
+    height: 30px;
+    width: 30px;
+}
+
+.img-wrapper{
+     margin: 20px 15px 20px;
+     border-radius: 15px;
+     padding: 8px;
+}

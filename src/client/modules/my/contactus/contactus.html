@@ -1,0 +1,57 @@
+<template>
+    <section class="contactus-section  dark-yellow">
+        <div class="container-fluid pt-5 pb-5 px-md-5">
+            <div class="pt-5 pb-5">
+                <div class="row flex-column-reverse flex-md-row" >
+                    <div class="col-12 col-md-5 text-center">
+                        <div class="pt-5">
+                            <h2 class="section-heading blue-heading-color"> contact us</h2>
+                            <div class="line mb-5 purple-gradient"></div>
+                        </div>
+                      <form>
+                          <div class="mb-3">
+                         <input type="text" class="form-control p-3" placeholder="Name" name ="name" onkeyup={formHandler}/>
+                          </div>
+                          <div class="mb-3">
+                            <input type="email" class="form-control p-3" placeholder="Email" name="email" onkeyup={formHandler}/>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control p-3" placeholder="Phone" name="phone" onkeyup={formHandler}/>
+                        </div>
+                        <div class="mb-3" >
+                              <textarea class="form-control p-3" cols="20" rows="10" placeholder="Message" name="message" onkeyup={formHandler}></textarea>
+                        </div>
+                        <button class="btn purple-gradient btn-lg text-white p-3 text-center mb-3 mt-3" 
+                        type="button"
+                        onclick={sendEmail}>Send Message</button>
+                      </form>
+
+                    </div>
+                    <div class="col-12 col-md-7 imageAlignment">
+                        <div>
+                            <img src="./resources/Images/nsalogo.jpg" alt="contact us image"
+                        class="img-fluid imageWidth" loading="lazy"  width="80%"/>
+                        <div>
+                        
+    
+                            <div> 
+                                <img src="./resources/email.png" alt="An image" width="20%"> 
+                                <h1 class=" blue-heading-color btn">Email - dpk.exe@gmail.com</h1>
+                                
+                            </div>
+                            <div> 
+                                <img src="./resources/call.png" alt="An image" width="19%"> 
+                                
+                                <h1 class=" blue-heading-color btn">Contact Number - 8292981908</h1>
+                            </div>
+                            
+                        
+                    </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

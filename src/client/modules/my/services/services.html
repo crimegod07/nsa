@@ -1,0 +1,32 @@
+<template>
+<section class="services-section dark-yellow"> 
+    <div class="container-fluid pt-5 pb-5 px-md-5">
+       <div class="text-center pt-5 pb-5">
+           <h2 class="section-heading blue-heading-c">Our services</h2>
+           <div class="line purple-gradient"></div>
+       </div> 
+       <div class="row row-cols-1 row-cols-md-3 g-4">
+           <template for:each={servicesData} for:item="service">
+            <div class="col" key={service.title}>
+                <div class="card h-100 p-4 rounded-3 services-animation">
+                    <div class={service.className}>
+                        <img src={service.image} class="card-img-top" alt={service.title}>
+                    </div>
+                  
+                  <div class="card-body">
+                    <h5 class="card-title text-center fs-3">{service.title}</h5>
+                    <p class="card-text text-center ">{service.description}</p>
+                    <p class="card-text text-center ">{service.description1}</p>
+                    <p class="card-text text-center ">{service.description2}</p>
+                    <p class="card-text text-center ">{service.description3}</p>
+                    <p class="card-text text-center ">{service.description4}</p>
+                  </div>
+                </div>
+            </div>
+           </template>
+        
+        </div>
+  </div>
+</section>
+
+</template>

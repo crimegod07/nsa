@@ -1,0 +1,13 @@
+.line{
+    height: 4px;
+    max-width: 100px;
+    margin:auto;
+    border-radius: 6px;
+}
+
+.small-box{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px 4px rgb(31 66 135 / 10%);
+    padding: 15px;
+}
