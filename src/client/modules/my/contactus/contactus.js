@@ -8,7 +8,7 @@ export default class Contactus extends LightningElement{
     }
     sendEmail(){
         console.log(this.formData)
-        fetch('http://localhost:3002/api/v1/sendemail',{
+        fetch('https://gentle-oasis-69102.herokuapp.com/api/v1/sendemail',{
         method:'POST',
         headers:{
             'accept':'application/json',
