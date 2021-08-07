@@ -15,17 +15,17 @@ export default class Contactus extends LightningElement{
             'Content-Type':'application/json'
         },
         body:JSON.stringify(this.formData)
-    }).then(Response=>{
+    }).then(response=>{
         if(!response.ok){
             throw new Error('No Response from server')
         }
-        return response.JSON()
+        return response.json()
 
     }).then(result=>{
-        console.log("Message Sent",result)
+        console.log("Message Sent", result)
         this.resetForm()
     }).catch(error=>{
-        console.log(error)
+        console.error(error)
     })
         
     }
