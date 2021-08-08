@@ -1,7 +1,7 @@
 const SERVICES_DATA = [
     {
     title:'Tennis Charges',
-    image:'./resources/Images/Tennis.png',
+    image:'./resources/Images/tennis.png',
     color:'blue',
 
     description:'Admission fees: Rs.2000',
