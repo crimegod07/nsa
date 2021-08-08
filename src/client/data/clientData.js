@@ -5,7 +5,7 @@ const CLIENT_DATA = {
         image:'./resources/Images/clients/client1.jpeg',
         name: 'Deepak',
         role: 'Tennis Player',
-        feedback:'Our mission was difficult, But we handled it admirably'
+        feedback:'Well organised. All is great, both for tennis and cricket, it’s in the centre of the city and also has flood lights to play in the night.'
         },
         {
             image:'./resources/Images/clients/client2.jpeg',

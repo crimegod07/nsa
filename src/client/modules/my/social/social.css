@@ -1,9 +1,18 @@
+.social{
+  height: calc(100vh  - 74px);
+  top: 74px;
+  position: relative;
+  
+}
+
+
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 7%;
+    width: 100;
   }
+  
   .column {
     float: left;
     width: auto;
@@ -16,3 +25,16 @@
     clear: both;
     display: table;
   }
+
+  .social-section {
+    min-height: 100vh;
+ 
+ }
+  @media only screen and (min-width:1024px){
+
+     .social-section {
+       padding:0rem 5rem;
+
+    }
+}
+
